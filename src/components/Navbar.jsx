@@ -28,6 +28,7 @@
 import { useState } from "react";
 import logo from "../assets/Group 237743.png";
 import { Search, Menu, X } from "lucide-react"; // hamburger & close icons
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +43,13 @@ export default function Navbar() {
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-6">
         <ul className="flex gap-8 items-center text-purple">
-          <li className="text-gray-500 font-medium text-lg hover:text-[#7C4EE4] cursor-pointer">Home</li>
+          <Link to="/">
+            <li className="text-gray-500 font-medium text-lg hover:text-[#7C4EE4] cursor-pointer">Home</li>
+          </Link>
           <li className="text-gray-500 font-medium text-lg hover:text-[#7C4EE4] cursor-pointer">Blog</li>
-          <li className="text-gray-500 font-medium text-lg hover:text-[#7C4EE4] cursor-pointer">About</li>
+        <Link to="about">
+        <li className="text-gray-500 font-medium text-lg hover:text-[#7C4EE4] cursor-pointer">About</li>
+        </Link>
           <Search className="text-gray-500 cursor-pointer" />
         </ul>
         <button className="bg-[#7C4EE4] text-white rounded-md font-medium w-36 h-11">

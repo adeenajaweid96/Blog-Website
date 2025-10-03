@@ -1,6 +1,8 @@
 import React from 'react'
+import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import About from "./Pages/About"
 // import Section404 from './components/404'
 import Section from './components/Section'
 import Footer from './components/Footer'
@@ -10,8 +12,12 @@ const App = () => {
   return (
    <>
    <Navbar/>
-   <Hero/>
+   <Routes>
+   {/* <Hero/> */}
+   <Route path='/' element={<Hero/>}/>
+   <Route path='about' element={<About/>}/>
    {/* <Section404/> */}
+   </Routes>
    <Section/>
    <Footer/>
    </>
