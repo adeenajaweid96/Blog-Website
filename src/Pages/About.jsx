@@ -43,13 +43,13 @@ const About = () => {
         {/* --------------------cards--------------------- */}
         <div className="flex justify-center gap-6 sm:gap-8 lg:gap-10 flex-wrap px-4 sm:px-8 py-10">
          {/* -----Card-1-----  */}
-          <div className="flex flex-col bg-white w-full sm:w-[40%] md:w-[30%] lg:w-[25%]
+          <div className="flex flex-col bg-white sm:w-[40%] md:w-[30%] lg:w-[30%]
  h-auto rounded-lg shadow-xl/20 py-4 hover:bg-[#7C4EE4] group transition-all duration-300">
             <h1 className="text-[#dddbdb] font-bold text-6xl sm:text-7xl pt-4 pl-2">01</h1>
             <h1 className="text-[#7C4EE4] text-xl sm:text-2xl font-bold py-4 pl-3 hover:text-white group-hover:text-white transition-colors duration-300">
               Brainstorming
             </h1>
-            <p className="text-gray-500 px-4 pb-9 text-sm sm:text-base group-hover:text-gray-200">
+            <p className="text-gray-500 px-4 pb-4 text-sm sm:text-base group-hover:text-gray-200">
               Bring to the table win-win survival strategies to ensure proactive
               domination. At the end of the day, going forward, a new normal
               that has evolved from generation X is on the runway heading
