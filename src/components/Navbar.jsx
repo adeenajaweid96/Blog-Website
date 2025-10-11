@@ -50,6 +50,10 @@ export default function Navbar() {
         <Link to="about">
         <li className="text-gray-500 font-medium text-lg hover:text-[#7C4EE4] cursor-pointer">About</li>
         </Link>
+
+           <Link to="contact">
+        <li className="text-gray-500 font-medium text-lg hover:text-[#7C4EE4] cursor-pointer">Contact</li>
+        </Link>
           <Search className="text-gray-500 cursor-pointer" />
         </ul>
         <button className="bg-[#7C4EE4] text-white rounded-md font-medium w-36 h-11">
