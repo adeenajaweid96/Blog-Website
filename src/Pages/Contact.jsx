@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
+    <div className='mx-auto max-w-screen-2xl'>
+        
       
     </div>
   )
