@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from "./Pages/About"
 import Contact from "./Pages/Contact"
+import Signup from './Pages/Signup';
+import Login from "./Pages/login"
 // import Section404 from './components/404'
 import Section from './components/Section'
 import Footer from './components/Footer'
@@ -18,6 +20,8 @@ const App = () => {
    <Route path='/' element={<Hero/>}/>
    <Route path='about' element={<About/>}/>
    <Route path='/contact' element={<Contact/>}/>
+   <Route path='/signup' element={<Signup/>}/>
+   <Route path='/login' element={<Login/>}/>
    {/* <Section404/> */}
    </Routes>
    <Section/>

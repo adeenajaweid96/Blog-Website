@@ -56,9 +56,9 @@ export default function Navbar() {
         </Link>
           <Search className="text-gray-500 cursor-pointer" />
         </ul>
-        <button className="bg-[#7C4EE4] text-white rounded-md font-medium w-36 h-11">
+       <Link to="signup"> <button className="bg-[#7C4EE4] text-white rounded-md font-medium w-36 h-11">
           Sign Up / Login
-        </button>
+        </button></Link>
       </div>
 
       {/* Mobile Hamburger */}
