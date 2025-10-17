@@ -1,6 +1,8 @@
 import image1 from "../assets/Vector.png";
 import image2 from "../assets/Vector (2).png";
 import image3 from "../assets/Frame.png";
+import map from "../assets/Rectangle 1086.png"
+
 
 const Contact = () => {
   return (
@@ -47,6 +49,25 @@ const Contact = () => {
           </div>
         </div>
 
+
+<div>
+<img src={map} alt="Map" />
+<div className="bg-white w-[45%] rounded-md h-[80%]">
+  <label htmlFor="">Name</label>
+<input type="text"  />
+
+  <label htmlFor="">Email</label>
+<input type="email"  />
+
+  <label htmlFor="">Phone</label>
+<input type="number"/>
+
+  <label htmlFor="">Subject</label>
+<input type="text"  />
+<label htmlFor="">Message</label>
+<textarea name="message" id=""></textarea>
+</div>
+</div>
 
       </div>
     </div>
