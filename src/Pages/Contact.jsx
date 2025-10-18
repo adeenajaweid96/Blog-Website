@@ -50,24 +50,102 @@ const Contact = () => {
         </div>
 
 
-<div>
-<img src={map} alt="Map" />
-<div className="bg-white w-[45%] rounded-md h-[80%]">
-  <label htmlFor="">Name</label>
-<input type="text"  />
+<div className="flex flex-col">
+ <img src={map} alt="Map" />
 
-  <label htmlFor="">Email</label>
-<input type="email"  />
+  <div className="w-full flex justify-center absolute ">
+          <form
+            className="bg-white w-full max-w-xl rounded-md shadow-md p-6 md:p-8
+                       flex flex-col gap-4 min-h-[420px]"
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <h2 className="text-xl font-semibold">Contact us</h2>
 
-  <label htmlFor="">Phone</label>
-<input type="number"/>
+            {/* Two-column inputs on md+, stacked on sm */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col">
+                <label className="text-sm mb-1">Name</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full rounded-md border-2 border-gray-200 outline-none px-3 py-2 focus:border-gray-400"
+                />
+              </div>
 
-  <label htmlFor="">Subject</label>
-<input type="text"  />
-<label htmlFor="">Message</label>
-<textarea name="message" id=""></textarea>
+              <div className="flex flex-col">
+                <label className="text-sm mb-1">Email</label>
+                <input
+                  type="email"
+                  required
+                  className="w-full rounded-md border-2 border-gray-200 outline-none px-3 py-2 focus:border-gray-400"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <label className="text-sm mb-1">Phone</label>
+                <input
+                  type="tel"
+                  required
+                  className="w-full rounded-md border-2 border-gray-200 outline-none px-3 py-2 focus:border-gray-400"
+                />
+              </div>
+
+              <div className="flex flex-col">
+                <label className="text-sm mb-1">Subject</label>
+                <input
+                  type="text"
+                  required
+                  className="w-full rounded-md border-2 border-gray-200 outline-none px-3 py-2 focus:border-gray-400"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col mt-2">
+              <label className="text-sm mb-1">Message</label>
+              <textarea
+                name="message"
+                rows={6}
+                className="w-full resize-y rounded-md border-2 border-gray-200 outline-none px-3 py-2 focus:border-gray-400"
+                placeholder="Write your message..."
+              />
+            </div>
+
+            <div className="mt-3 flex justify-end">
+              <button
+                type="submit"
+                className="px-5 py-2 rounded-md bg-[#7C4EE4] text-white font-medium hover:opacity-95"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
 </div>
-</div>
+{/* 
+// <div className="bg-white w-[45%] rounded-md h-[60%] flex flex-col justify-center items-center">
+// <div className="col-2">
+//   <label htmlFor="">Name</label><br/>
+// <input type="text" required className="outline-gray-200 border-2 border-gray-200"/>
+
+//   <label htmlFor="">Email</label>
+// <input type="email"  required className="outline-gray-200 border-2 border-gray-200"/>
+// </div>
+// <div className="col-2">
+//   <label htmlFor="">Phone</label>
+// <input type="number" required className="outline-gray-200 border-2 border-gray-200"/>
+
+//   <label htmlFor="">Subject</label>
+// <input type="text" required className="outline-gray-200 border-2 border-gray-200" />
+// </div>
+// <label htmlFor="">Message</label>
+// <textarea name="message" id=""></textarea>
+// </div>
+// </div> */}
+
+
+       
+
+
 
       </div>
     </div>
